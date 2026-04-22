@@ -202,3 +202,35 @@ mkfifo - Creates a named pipe (a special file) that allows independent processes
 ```bash
 mkfifo my_pipe
 ```
+
+### Shell Variable Essentials
+
+\= : Used to assign a value to a variable name
+
+```bash
+NAME="Gemini"
+```
+
+$ : Used to access or "expand" the value stored inside a variable
+
+```bash
+echo $NAME
+```
+
+read : A command that pauses execution to take input from the user and save it into a variable
+
+```bash
+read USER_INPUT
+```
+
+export : Marks a local shell variable to be passed down to any child processes or scripts started from that session.
+
+```bash
+export PATH
+```
+
+env : A command that lists all current environment variables or runs a program in a modified environment.
+
+```bash
+env
+```
