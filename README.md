@@ -56,4 +56,4 @@ Suggestions, corrections, and discussions are always welcome.
 
 ### 📌 Author
 
-Maintained by **n0voidX**
+Maintained by **wiz33**
