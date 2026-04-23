@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Linux for Hackers](README.md)
+* [Linux for Hackers](linux.md)
 * [Copy of Linux for Hackers](readme-1.md)
