@@ -1,5 +1,3 @@
-
-
 # Linux for Hackers
 
 whoami - prints the username of the currently logged-in user.
@@ -231,4 +229,30 @@ env : A command that lists all current environment variables or runs a program i
 
 ```bash
 env
+```
+
+### Data Manipulation
+
+tr : Short for translate, it is used to swap, delete, or squeeze specific characters (like changing lowercase to uppercase).
+
+```bash
+echo "hello world" | tr 'a-z' 'A-Z'
+```
+
+head : Displays the beginning of a file, showing the first 10 lines by default.
+
+```bash
+head -n 5 data.txt
+```
+
+cut : Used to extract specific columns or sections from each line of a file based on a delimiter or character position.
+
+```bash
+cut -d " " -f 1 scores.txt
+```
+
+sort : Arranges the lines of a text file in a specific order, such as alphabetical or numerical.
+
+```bash
+sort names.txt
 ```
