@@ -30,7 +30,10 @@ The goal of this repo is to:
 * Share useful insights with others
 
 ***
+### 🗂️ Structure
+* [SUMMARY](SUMMARY.md)
 
+***
 ### ⚠️ Disclaimer
 
 This content is for **educational purposes only**.
