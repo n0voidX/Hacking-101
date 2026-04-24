@@ -256,3 +256,53 @@ sort : Arranges the lines of a text file in a specific order, such as alphabetic
 ```bash
 sort names.txt
 ```
+
+## Processes and Jobs
+
+ps : Displays a snapshot of the currently active processes.
+
+```bash
+ps -ef
+```
+
+kill : Sends a signal to a process to terminate it using its ID.
+
+```bash
+kill PID
+```
+
+ctrl + c : Sends a signal to immediately stop and terminate the foreground process.
+
+```bash
+ctrl + c
+```
+
+ctrl + z : Suspends the current foreground process and moves it to the background.
+
+```bash
+ctrl + z
+```
+
+fg : Brings a backgrounded or suspended job back into the foreground.
+
+```bash
+fg
+```
+
+bg : Resumes a suspended job by running it in the background.
+
+```bash
+bg
+```
+
+& : Executes a command in the background immediately upon starting.
+
+```bash
+python script.py &
+```
+
+$? : An environment variable that holds the exit status of the last executed command.
+
+```bash
+echo $?
+```
