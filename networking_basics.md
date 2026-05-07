@@ -1,6 +1,6 @@
 # Networking\_basics
 
-## 🌐 OSI Model: Open Systems Interconnection
+### 🌐 OSI Model: Open Systems Interconnection
 
 The OSI model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers.
 
