@@ -1,10 +1,20 @@
 # linux for hackers
 
+### User Information Commands&#xD;
+
 whoami - prints the username of the currently logged-in user.
 
 ```bash
 whoami
 ```
+
+pwd - prints the absolute path of the current working directory.
+
+```bash
+pwd
+```
+
+### Output / Display Commands&#xD;
 
 echo - outputs text or variable values to stdout.
 
@@ -27,30 +37,14 @@ cat - concatenates and displays file contents.
 cat file.txt
 ```
 
-pwd - prints the absolute path of the current working directory.
-
-```bash
-pwd
-```
-
-grep - searches for patters in files using regex.
-
-```bash
-grep "root" /etc/passwd
-```
-
-diff - compares two files line by line.
-
-```bash
-diff file1.txt file2.txt
-```
-
 ls - lists directory contents.
 
 ```bash
 ls 
 ls -a 
 ```
+
+### File Creation & Management Commands&#xD;
 
 touch - creates empty files or updates file timestamps.
 
@@ -85,6 +79,14 @@ mkdir - creates new directories.
 mkdir test
 ```
 
+ln - creates hard or symbolic links.
+
+```bash
+ln -s /etc/passwd /tmp/p
+```
+
+### File Searching & Inspection Commands&#xD;
+
 find - searches for files by name, permissions, size, owner, or type.
 
 ```bash
@@ -98,10 +100,24 @@ file suspicious.bin
 file image.jpg
 ```
 
-ln - creates hard or symbolic links.
+grep - searches for patters in files using regex.
 
 ```bash
-ln -s /etc/passwd /tmp/p
+grep "root" /etc/passwd
+```
+
+diff - compares two files line by line.
+
+```bash
+diff file1.txt file2.txt
+```
+
+### Help & Documentation Commands&#xD;
+
+help - displays help for bash built-in commands.
+
+```bash
+help cd 
 ```
 
 man - opens the namual page for any command.
@@ -109,12 +125,6 @@ man - opens the namual page for any command.
 ```bash
 man grep
 man ls
-```
-
-help - displays help for bash built-in commands.
-
-```bash
-help cd 
 ```
 
 ### Wildcard Characters
@@ -257,7 +267,7 @@ sort : Arranges the lines of a text file in a specific order, such as alphabetic
 sort names.txt
 ```
 
-## Processes and Jobs
+### Processes and Jobs
 
 ps : Displays a snapshot of the currently active processes.
 
@@ -306,3 +316,48 @@ $? : An environment variable that holds the exit status of the last executed com
 ```bash
 echo $?
 ```
+
+### Permissions
+
+chown : Changes the owner of a file or directory.
+
+```bash
+chown phantom file.txt
+```
+
+chgrp : Changes the group ownership of a file or directory.
+
+```bash
+chgrp developers file.txt
+```
+
+chmod :Changes file permissions for user, group, and others.
+
+```bash
+chmod ugo+rwx file.txt
+```
+
+\- : Removes a permission.
+
+```bash
+chmod g-w file.txt
+```
+
+\+ : Adds a permission.
+
+```bash
+chmod u+x script.sh 
+```
+
+\= : Sets exact permissions (replaces old ones).
+
+```bash
+chmod o=r file.txt
+```
+
+, : chains multiple modes.
+
+```bash
+chmod u+r,g=x,o=rw file.txt
+```
+
