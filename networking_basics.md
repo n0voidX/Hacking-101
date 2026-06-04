@@ -138,7 +138,50 @@ There are three common methods of signal transmission used in networks:
 
 **Bandwidth** refers to the maximum theoretical capacity of a network connection — the highest amount of data that _can_ be transmitted over a channel in a given period of time. It is measured in bits per second (bps), megabits per second (Mbps), or gigabits per second (Gbps). Think of bandwidth as the width of a highway — a wider road has more lanes and can theoretically accommodate more traffic at once. It represents potential, not actual performance.
 
-### Throughput
+#### Throughput
 
 **Throughput**, on the other hand, refers to the actual amount of data successfully transmitted over a network in a given period of time. It is what you experience in reality, and it is almost always lower than the bandwidth due to factors such as network congestion, packet loss, latency, hardware limitations, and transmission errors. Using the same highway analogy, throughput is the number of cars that actually reach their destination — accounting for traffic jams, accidents, and slowdowns along the way.
+
+### Clients and Servers
+
+#### Roles
+
+#### The Client
+
+The client is the device or application that requests information or services.
+
+* Examples: Your web browser (Chrome, Safari), a mobile app like Instagram, or your smart TV.
+* Role: It provides the user interface, takes your input (like clicking a link), sends a request across the network, and displays the response you get back.
+
+#### The Server
+
+The server is a powerful computer or cluster of computers that delivers data or services to the clients.
+
+* Examples: Google’s search database, Netflix's video storage, or an email host.
+* Role: It constantly listens for incoming requests from clients. When a request arrives, the server processes it, fetches the necessary data, and sends it back to the client.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Peer-to-Peer Networks
+
+Unlike the client-server model, where a central computer does all the heavy lifting, a Peer-to-Peer (P2P) network is a decentralized structure where every computer on the network is an equal.
+
+In a P2P network, there is no dedicated server. Instead, every connected computer is called a peer.
+
+#### How P2P Works
+
+In this setup, each peer acts as both a client and a server at the same time.
+
+* As a Client: A peer can request files or data from other computers on the network.
+* As a Server: A peer shares its own processing power, disk storage, or bandwidth, allowing other computers to download files directly from it.
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Key Characteristics of P2P
+
+* Decentralized: There is no single point of control. If one computer goes offline, the rest of the network keeps working perfectly.
+* Highly Scalable: The network actually gets _stronger_ and faster as more people join, because every new user adds more resources to share.
+* Common Examples: File-sharing networks (like BitTorrent), blockchain and cryptocurrencies (like Bitcoin), and certain VoIP services (like early versions of Skype).
+
+###
 
