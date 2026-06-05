@@ -183,5 +183,155 @@ In this setup, each peer acts as both a client and a server at the same time.
 * Highly Scalable: The network actually gets _stronger_ and faster as more people join, because every new user adds more resources to share.
 * Common Examples: File-sharing networks (like BitTorrent), blockchain and cryptocurrencies (like Bitcoin), and certain VoIP services (like early versions of Skype).
 
-###
+### Network Infrastructure
+
+Network infrastructure is the underlying hardware and software resources that enable network connectivity, communication, operations, and management of an enterprise network. Think of it as the digital highway system of the modern world—it provides the paths, signals, and rules that allow data to travel safely and quickly from point A to point B.
+
+A typical network infrastructure is built from three main components:
+
+#### 1. Hardware
+
+These are the physical, tangible devices you can touch. They form the literal backbone of the network.
+
+* Routers: The traffic cops that connect different networks together and direct data packets along the most efficient paths.
+* Switches: The internal hubs that connect devices (like computers, printers, and servers) within the same local network.
+* Cables and Access Points: Fiber-optic cables, Ethernet wires, and Wi-Fi routers that physically transmit data.
+
+#### 2. Software
+
+Without software, the hardware is just expensive metal. This layer manages and secures the data flow.
+
+* Operating Systems: Network OS (like Cisco IOS) that run routers and switches.
+* Protocols and Firewalls: Security software and rules (like TCP/IP) that protect the network from unauthorized access and ensure data is packaged correctly.
+
+#### 3. Services
+
+These are the background functions that make the network usable for humans.
+
+* IP Addressing (DHCP): Automatically assigning a digital "home address" to every device that connects.
+* Domain Name Resolution (DNS): The phonebook of the internet that translates human-friendly URLs (like google.com) into computer-friendly IP addresses.
+
+### End Devices
+
+The network devices that people are most familiar with are called end devices, or hosts. These devices form the interface between users and the underlying communication network.
+
+Some examples of end devices are as follows:
+
+* Computers (workstations, laptops, file servers, web servers)
+* Network printers
+* Telephones and teleconferencing equipment
+* Security cameras
+* Mobile devices (such as smart phones, tablets, PDAs, and wireless debit/credit card readers and barcode scanners)
+
+An end device (or host) is either the source or destination of a message transmitted over the network, as shown in the animation. In order to uniquely identify hosts, addresses are used. When a host initiates communication, it uses the address of the destination host to specify where the message should be sent.
+
+### Wireless Networks
+
+Wireless networks are computer networks that use radio frequency (RF) connections to connect devices, eliminating the need for physical cables. They allow smartphones, laptops, and smart devices to communicate and share data over the air, providing mobility and flexibility.
+
+Depending on their range, speed, and purpose, wireless networks are categorized into different types. Here is a breakdown of the most common ones you use every day:
+
+#### 1. Wireless Personal Area Networks (WPAN)
+
+These are short-range networks designed to connect personal devices within a small space, usually within arm's reach or a single room.
+
+* Bluetooth: Best for short-range audio streaming, file sharing, and connecting peripherals (like wireless earbuds, mice, and smartwatches). It operates efficiently over short distances with low power consumption.
+* NFC (Near Field Communication): An ultra-short-range technology (usually requiring devices to be within a few centimeters of each other). It is the backbone of contactless mobile payments like Apple Pay or Google Wallet, and quick data transfers between phones.
+
+#### 2. Wireless Local Area Networks (WLAN)
+
+These networks cover a medium distance, typically inside a home, office, or school.
+
+* Wi-Fi: The most ubiquitous wireless technology. It connects local devices to each other and to the internet through a central wireless router or access point. It offers high data speeds but requires devices to stay within a few hundred feet of the router.
+
+#### 3. Wireless Wide Area Networks (WWAN)
+
+These networks cover massive geographic areas, such as entire cities, countries, or even the globe.
+
+* Cellular Networks (4G/5G): Provided by telecommunications companies using cellular towers. This is what gives your phone internet access on the go, allowing you to stream videos or browse the web from almost anywhere.
+* GPS (Global Positioning System): While technically a one-way space-based navigation system rather than a two-way communication network, GPS uses a constellation of satellites to beam signals down to your device. Your phone calculates these signals to determine your exact location anywhere on Earth.
+
+#### Summary Table
+
+| **Technology** | **Typical Range** | **Primary Use Case**                           |
+| -------------- | ----------------- | ---------------------------------------------- |
+| NFC            | Centimeters       | Contactless payments, tap-to-pair              |
+| Bluetooth      | \~10 meters       | Connecting headphones, smartwatches, keyboards |
+| Wi-Fi          | \~50–100 meters   | Home and office internet browsing              |
+| Cellular (5G)  | Kilometers        | Mobile internet while traveling                |
+| GPS            | Global            | Maps, navigation, and tracking                 |
+
+### The Internet and Standards
+
+With the increasing number of new devices and technologies coming online, how is it possible to manage all the changes and still reliably deliver services such as email? The answer is internet standards.
+
+A standard is a set of rules that determines how something must be done. Networking and internet standards ensure that all devices connecting to the network implement the same set of rules or protocols in the same manner. Using standards, it is possible for different types of devices to send information to each other over the internet. For example, the way in which an email is formatted, forwarded, and received by all devices is done according to a standard. If one person sends an email via a personal computer, another person can use a mobile phone to receive and read the email as long as the mobile phone uses the same standards as the personal computer.
+
+### Network Protocols
+
+Think of network protocols as the digital languages and rulebooks of the internet. Without them, gadgets might be able to physically connect to each other, but they wouldn't have a clue how to actually communicate.
+
+#### What is a Network Protocol?
+
+A network protocol is a standardized set of rules, formats, and procedures that govern how data is transmitted and received across a network. They ensure that whether you are using an iPhone, a Windows laptop, or a smart fridge, your devices can seamlessly exchange data regardless of their manufacturer or internal software.
+
+#### The Core Functions
+
+Protocols work behind the scenes to handle several critical tasks:
+
+* Data Formatting: Breaking large chunks of data (like a video file) into smaller, manageable pieces called packets.
+* Routing: Ensuring these packets find the most efficient path to their destination.
+* Error Recovery: Checking if any packets were lost or corrupted during transit and asking for them to be resent.
+
+#### Common Examples You Use Every Day
+
+| **Protocol** | **What it Stands For**                            | **What it Does**                                                                                                     |
+| ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| HTTP / HTTPS | Hypertext Transfer Protocol (Secure)              | Loads webpages. The "S" version encrypts the data for security.                                                      |
+| TCP / IP     | Transmission Control Protocol / Internet Protocol | The fundamental "backbone" of the internet that connects devices and guarantees reliable data delivery.              |
+| DNS          | Domain Name System                                | The internet's phonebook. It translates human-friendly URLs (like `google.com`) into computer-friendly IP addresses. |
+| SMTP / IMAP  | Simple Mail Transfer / Internet Message Access    | The protocols responsible for sending and retrieving emails.                                                         |
+
+If a network protocol is a single rulebook, a protocol stack is the entire library.
+
+In the real world, no single protocol can handle everything required to send data across the globe. Instead, multiple protocols work together, stacked on top of each other in a specific hierarchy.
+
+#### What is a Protocol Stack?
+
+A protocol stack (also known as a protocol suite) is a prescribed hierarchy of software layers that work together to enable network communication. Each layer in the stack has a dedicated job and uses specific protocols to accomplish it.
+
+When you send data, it moves down the stack, with each layer adding its own necessary information. When the data arrives at its destination, it moves up the stack, stripping that information back off.
+
+#### The Two Main Models
+
+Network engineers generally refer to two conceptual models to understand how these stacks are structured:
+
+1. The TCP/IP Model (The Practical Stack): This is the actual architecture that powers the modern internet. It is typically broken down into 4 layers:
+   * Application Layer: Where you interact with the network (e.g., HTTP for web browsers, SMTP for email).
+   * Transport Layer: Ensures data gets from point A to point B reliably (e.g., TCP, UDP).
+   * Internet Layer: Handles the routing and addressing of data packets across different networks (e.g., IP).
+   * Network Access Layer: The physical hardware and data-link protocols that actually move bits over wires or Wi-Fi (e.g., Ethernet, Wi-Fi).
+2. The OSI Model (The Theoretical Stack): A more detailed, 7-layer theoretical model used primarily for teaching and troubleshooting. It breaks the process down even further into Physical, Data Link, Network, Transport, Session, Presentation, and Application layers.
+
+#### How It Works: The Assembly Line Analogy
+
+Think of a protocol stack like a factory assembly line preparing a package for shipping:
+
+* Application Layer: You write a letter and put it in an envelope.
+* Transport Layer: The factory seals the envelope and writes a tracking number on it so it doesn't get lost.
+* Internet Layer: The shipping department pastes the destination address and return address on the outside of the box.
+* Network Access Layer: The box is loaded onto a delivery truck and driven down the highway.
+
+### TCP/IP
+
+The TCP/IP model is the foundational blueprint of the modern internet. Created in the 1970s by the U.S. Department of Defense, it is a practical, four-layer framework that dictates exactly how data is packaged, addressed, sent, and received across a global network of diverse devices.
+
+* Application Layer: Interacts directly with user software to initiate communication via familiar protocols like HTTP for web browsing or SMTP for email.
+* Transport Layer: Manages host-to-host communication by slicing data into segments and deciding whether to send them reliably (TCP) or rapidly (UDP).
+* Network (or Internet) Layer: Packages segments into packets and uses IP addresses to route them across different networks to their ultimate destination.
+* Network Access Layer: Converts data packets into hardware-readable frames and physically transmits them as raw bits (1s and 0s) over Wi-Fi, Ethernet, or fiber-optic cables.
+
+### TCP/IP vs OSI
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
