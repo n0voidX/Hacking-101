@@ -335,3 +335,59 @@ The TCP/IP model is the foundational blueprint of the modern internet. Created i
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+### The Internet Protocol (IP)
+
+Think of the Internet Protocol (IP) as the universal postal service for the digital world. Whenever you send a text, stream a video, or load a website, your data is chopped up into tiny digital envelopes called "packets." The Internet Protocol is the set of rules that ensures these packets are properly addressed, sorted, and delivered across the vast global network. Without this standard agreement, our devices would be speaking different languages, and your data would get hopelessly lost in cyberspace.
+
+#### IPv4 Addresses
+
+To deliver a physical letter, the post office needs your specific street address. In the digital realm, that unique identifier is called an IP address, and IPv4 (Internet Protocol version 4) is the traditional format we've used for decades. An IPv4 address looks like a string of numbers separated by periods—for example, `192.168.1.1`. Every single smartphone, laptop, and smart TV connected to the internet gets one of these unique numbers so the network knows exactly where to route the information you requested.
+
+#### The Structure of IPv4
+
+Behind the scenes, computers don't actually see these friendly numbers; they see binary code (a massive string of 1s and 0s). An IPv4 address is made up of exactly 32 bits, which we humans divide into four sections called octets (because each section contains 8 bits). When written out normally, each of these four sections can range from 0 to 255. Structurally, the address is split into two halves: the first part acts like a "ZIP code" identifying your specific network, while the second part acts like the "house number" identifying your specific device within that network.
+
+### Ipv4 Unicast , Broadcast and Multicast
+
+#### Unicast Communication
+
+Unicast is a one-to-one transmission method where data is sent from a single source to a single, specific destination. It operates much like a targeted email or a direct phone call. When a device requests a webpage or downloads a specific file from a server, a dedicated communication channel is established between those two endpoints. Because the data packet contains a unique destination IP address, only the intended recipient processes the information, ensuring efficient network utilization and data privacy for individual transactions.
+
+#### Broadcast Communication
+
+Broadcast is a one-to-all transmission method where a single sender transmits data to every device within a local network segment simultaneously. This is structurally equivalent to a television station broadcasting a signal to all local antennas. In networking, broadcast is primarily utilized for essential discovery protocols, such as Address Resolution Protocol (ARP), where a device needs to find a resource but does not know its specific location. While effective for localized coordination, excessive broadcast traffic can lead to "broadcast storms," consuming significant network bandwidth and processing power as every device is forced to intercept and evaluate the packet.
+
+#### Multicast Communication
+
+Multicast is a one-to-many transmission method designed to deliver data from a single source to a specific, predefined group of interested recipients. Instead of flooding the entire network like a broadcast, or replicating the data dozens of times via unicast, multicast uses a specialized range of IP addresses to target a subscription group. When a device wants to receive a multicast stream—such as an enterprise video conference, a live IPTV feed, or real-time financial market data—it joins the corresponding multicast group. The underlying network switches and routers then intelligently replicate the data stream only along the paths where active subscribers exist, drastically optimizing bandwidth efficiency.
+
+### Assignment of IP Addresses
+
+#### Regional Internet Registries
+
+Public IPv4 addresses are addresses which are globally routed over the internet. Public IPv4 addresses must be unique.
+
+Both IPv4 and IPv6 addresses are managed by the Internet Assigned Numbers Authority (IANA). The IANA manages and allocates blocks of IP addresses to the Regional Internet Registries (RIRs).&#x20;
+
+RIRs are responsible for allocating IP addresses to ISPs who provide IPv4 address blocks to organizations and smaller ISPs. Organizations can also get their addresses directly from an RIR (subject to the policies of that RIR).
+
+### Legacy Classful Addressing: The Original Sorting System
+
+When the internet was first created, engineers needed a way to hand out IP addresses to different organizations. They invented a system called Classful Addressing, which divided all available IP addresses into rigid categories, or "classes" (Classes A, B, and C).
+
+* Class A was for massive entities like governments or tech giants; it gave them a giant "ZIP code" block containing over 16 million individual device addresses.
+* Class B was for medium-sized organizations like universities, offering about 65,000 addresses.
+* Class C was for small businesses, offering only 254 addresses.
+
+The system is called "legacy" because it is no longer used today. It was incredibly wasteful; if a company needed 500 addresses, they were too big for Class C and had to be given a Class B block, leaving over 64,000 addresses completely unused and locked away.
+
+### Types of IPv4 Addresses: Public vs. Private
+
+Because of the waste caused by classful addressing, the world began running out of IPv4 addresses. To fix this, engineers split IPv4 addresses into two main types: Public and Private.
+
+* Public IP addresses are unique worldwide. Any server, website, or router directly facing the global internet must have a public IP, much like a unique international phone number. No two devices on earth can share the same public IP at the same time.
+* Private IP addresses are reusable numbers reserved for inside closed, local networks—like your home Wi-Fi or a school computer lab. Your home router likely assigns your phone an address like `192.168.1.5`. Your neighbor's router can use that exact same address for their phone because the two networks are completely isolated from each other. Private addresses cannot travel onto the global internet; they only work inside your local walls.
+
+### NAT (Network Address Translation): The Digital Border Guard
+
+If private IP addresses cannot travel onto the global internet, how does your phone load a website over Wi-Fi? The answer is NAT (Network Address Translation). NAT is a technology built into your home router that acts like a digital border guard or a mailroom manager for an entire apartment building.
