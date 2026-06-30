@@ -91,6 +91,7 @@ find - searches for files by name, permissions, size, owner, or type.
 
 ```bash
 find -name test
+find . -type f ! -empty #find all files that are NOT empty
 ```
 
 file - determines the true type of file regardless of extension.
